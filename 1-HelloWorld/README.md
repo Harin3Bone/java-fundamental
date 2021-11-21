@@ -25,8 +25,8 @@ The **static** is a Java keyword that needs an understanding of other concepts, 
 ### Void
 The **void** is another Java keyword used to indicate that the method will not return anything.
 
-## Code Block
+### Code Block
 A **code block** is used to define a block of code. It's mandatory to have one in a method declaration and it's here where we will be adding statements to perform certain tasks.
 
-## Statement
+### Statement
 This is a complete command to be executed and can include one or more expressions
