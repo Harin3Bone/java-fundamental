@@ -11,8 +11,6 @@ _Example_
         lastString = lastString + myInt;
 ```
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
-
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
 

@@ -185,22 +185,32 @@ A `boolean` value of logical allows for two choices
 
 We use `//` in front of any code, or on a blank line. Anything after `//` right through to the end of line is ignored by computer
 
-> **Note**
-> By the way you can use `/* */` to create comment block like this
-> ```java
-> public class Variable {
->       public static void main(String[] args) {
->           int myFirstIntValue = 1;
->           int mySecondIntValue = 2;
->           /*
->           System.out.println(myFirstIntValue);
->           System.out.println(mySecondIntValue);
->           System.out.println(myFirstIntValue + mySecondIntValue);
->           */
->       }
-> }
-> ```
-> But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
+_Example_
+```java
+public class Operator {
+
+    public static void main(String[] args) {
+        int result = 1 + 2; // 1 + 2 = 3
+        System.out.println("1 + 2 = " + result);
+    }
+}
+```
+
+By the way you can use `/* */` to create comment block like this
+```java
+public class Variable {
+      public static void main(String[] args) {
+          int myFirstIntValue = 1;
+          int mySecondIntValue = 2;
+          /*
+          System.out.println(myFirstIntValue);
+          System.out.println(mySecondIntValue);
+          System.out.println(myFirstIntValue + mySecondIntValue);
+          */
+      }
+}
+```
+But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
 ___ 
 ## Summary
 1. `String` use **double quotes (")** to define
