@@ -66,6 +66,8 @@ public class ByteShortIntLong {
 }    
 ```
 
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/String.md)
+
 ### Literal Char
 The `char` concept is just like `String` you can store any character, letter or number and other character like and exclamation mark ,question mark, hash, at sign ,etc. 
 
@@ -198,3 +200,6 @@ ___
 8. Not recommended to use casting in `float` and `double`
 9. For an advance calculation recommended to use class `BigDecimal` 
 10. In terms of Java `boolean` is primitive type and it can be set to 2 value only **True** or **False**
+11. Common primitive type will be `int`, `double` and `boolean`, Sometime maybe use `long` and `char`. 
+12. About `short`, `float` and `byte` are hardly to use anymore.
+13. `String` in Java are **immutable**
