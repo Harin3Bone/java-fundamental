@@ -84,15 +84,17 @@ public class Variable {
 ### Primitive Types
 In Java primitive types are the most basic data types. The `int` is 1 of 8 primitive types.
 
-List of Primitive Types 
+_List of Primitive Types_
 1. boolean
 2. byte
 3. char
 4. short
-5. int
+5. int 
 6. long
 7. float
 8. double
+
+[Read More](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
 
 ### Wrapper Classes
 Java uses the concept of a Wrapper class for all 8 `Primitive types`
