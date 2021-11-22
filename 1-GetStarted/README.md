@@ -1,4 +1,4 @@
-# Hello World Project
+# Get Started Project
 
 Java programs have keywords. Each has a specific meaning and sometimes they need to be used in specific orders.
 
