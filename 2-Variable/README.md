@@ -94,7 +94,8 @@ _List of Primitive Types_
 7. float
 8. double
 
-[Read More](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
+
 
 ### Wrapper Classes
 Java uses the concept of a Wrapper class for all 8 `Primitive types`
@@ -140,3 +141,12 @@ public class ByteShortIntLong {
 > **Note**
 > 
 > The **Number Types** in Java are use `int` by default. Then we recommended to always use `int` unless you've got a reason for not to do that
+
+___ 
+## Summary
+1. Number Types in Java use `int` by default.
+2. Recommended to always use `int` unless you've got a reason for not to do that.
+3. Number Types with floating point in Java use `double` by default.
+4. Recommended to use `double` for most calculations When you have to use precision of a floating point.
+5. Not recommended to use casting in `float` and `double`
+6. For an advance calculation recommended to use class `BigDecimal` 
