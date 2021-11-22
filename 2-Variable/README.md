@@ -39,7 +39,7 @@ This is a construct that evaluates to a single value
 
 **Example**
 ```java
-public class Expression {
+public class Variable {
 
     public static void main(String[] args) {
         int mySecondNumber = 12;
