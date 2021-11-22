@@ -11,6 +11,19 @@ _Example_
         lastString = lastString + myInt;
 ```
 
+_List of operators_
+| List | Operator | Explain |Describe|
+|:----:|:--------:|--------:|-------:|
+|1|=|Equal / Assigned|N/A|
+|2|+|Plus/Additional|Arithmetic Operator|
+|3|-|Minus/Subtract|Arithmetic Operator|
+|4|*|Multiply|Arithmetic Operator|
+|5|/|Divide|Arithmetic Operator|
+|6|%|Modular|Arithmetic Operator|
+|7|&&|AND|Logical Operator|
+|8|\|\||OR|Logical Operator|
+|9|!|NOT|Logical Operator|
+
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
 
@@ -36,9 +49,23 @@ _Example_
         int mySecondNumber = 12;
         int myThirdNumber = 6;
         int myTotal = mySecondNumber + myThirdNumber;
-
 ```
 `mySecondNumber + myThirdNumber` is the **Expression**
+
+### Abbreviate Operator
+**Abbreviate Operator** is a short hand of syntax
+
+| Abbreviate | Short hand | Explain |
+|:-----------|:-----------|--------:|
+|Plus one (after)|result++|result = result + 1|
+|Subtract one (after)|result--|result = result -1|
+|Plus one (before)|++result|result = result + 1|
+|Subtract one (before)|--result|result = result -1|
+|Plus value|result += `value`|result = result + `value`|
+|Subtract value|result -= `value`|result = result - `value`|
+|Multiply value|result *= `value`|result = result * `value`|
+|Divide value|result /= `value`|result = result / `value`|
+|Modular value|result %= `value`|result = result % `value`|
 
 ___
 ## Usage
@@ -134,3 +161,88 @@ _Result_
 ```bash
 4 % 3 = 1
 ```
+
+### Additional One
+Use `++` sign in variable
+
+_Example 1_ use `++` behind variable
+```java
+    public static void main(String[] args) {
+        int result = 6;
+        System.out.println("Current result = " + result);
+        System.out.println("Addition after print = " + (result++));
+        System.out.println("Current result = " + result);
+    }
+```
+_Result 1_
+```console
+Current result = 6
+Addition after print = 6
+Current result = 8
+```
+
+_Example 2_ use `++` in front of variable
+```java
+    public static void main(String[] args) {
+        int result = 7;
+        System.out.println("Current result = " + result);
+        System.out.println("Addition before print = " + (result++));
+        System.out.println("Current result = " + result);
+    }
+```
+_Result 2_
+```console
+Current result = 7
+Addition before print = 8
+Current result = 8
+```
+
+### Subtract One
+Use `--` sign in variable
+
+_Example 1_ use `--` behind variable
+```java
+    public static void main(String[] args) {
+        int result = 8;
+        System.out.println("Current result = " + result);
+        System.out.println("Subtract after print = " + (result--));
+        System.out.println("Current result = " + result);
+    }
+```
+_Result 1_
+```console
+Current result = 8
+Subtract after print = 8
+Current result = 7
+```
+
+_Example 2_ use `--` in front of variable
+```java
+    public static void main(String[] args) {
+        int result = 7;
+        System.out.println("Current result = " + result);
+        System.out.println("Subtract before print = " + (--result));
+        System.out.println("Current result = " + result);
+    }
+```
+_Result 2_
+```console
+Current result = 7
+Subtract before print = 6
+Current result = 6
+```
+
+### Abbreviate Operator
+Abbreviate operator are just a short hand syntax for operand value 
+
+_Example 1_ Plus by value
+```java
+    public static void main(String[] args) {
+        int result = 1;
+        result += 2;
+        System.out.println("Result = " + result);
+    }
+```
+From example on above **result += 2** that's mean **result = result +2**
+
+Actually you can use all of **arithmetic operator** in short hand like this.

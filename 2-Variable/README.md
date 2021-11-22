@@ -180,6 +180,23 @@ A `boolean` value of logical allows for two choices
 
 [Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
 
+### Abbreviate Operator
+**Abbreviate Operator** is a short hand of syntax
+
+| Abbreviate | Short hand | Explain |
+|:-----------|:-----------|--------:|
+|Plus one (after)|result++|result = result + 1|
+|Subtract one (after)|result--|result = result -1|
+|Plus one (before)|++result|result = result + 1|
+|Subtract one (before)|--result|result = result -1|
+|Plus value|result += `value`|result = result + `value`|
+|Subtract value|result -= `value`|result = result - `value`|
+|Multiply value|result *= `value`|result = result * `value`|
+|Divide value|result /= `value`|result = result / `value`|
+|Modular value|result %= `value`|result = result % `value`|
+
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
+
 ### Comment
 **Comment** are ignored by the computer and are added to a program to help describe something to make human known it.
 
