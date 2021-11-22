@@ -33,23 +33,6 @@ public class Variable {
 > 
 > The value is `5`
 
-
-### Expression
-This is a construct that evaluates to a single value
-
-**Example**
-```java
-public class Variable {
-
-    public static void main(String[] args) {
-        int mySecondNumber = 12;
-        int myThirdNumber = 6;
-
-        int myTotal = mySecondNumber + myThirdNumber;
-    }
-}
-```
-
 ### Literal String
 Any sequence of characters surrounded by double quotes is a **String Literal** in Java. It's value cannot be changed, unlike variable.
 
@@ -188,6 +171,36 @@ A `boolean` value of logical allows for two choices
 
 [Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
 
+### Operator, Operand and Expression
+**Operators** in Java are special symbols that perform specific operations on one, two or three operands, and then return a result.
+
+**Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
+
+**Expression** is formed by combining variables, literals, method return values and operators.
+
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
+
+### Comment
+**Comment** are ignored by the computer and are added to a program to help describe something to make human known it.
+
+We use `//` in front of any code, or on a blank line. Anything after `//` right through to the end of line is ignored by computer
+
+> **Note**
+> By the way you can use `/* */` to create comment block like this
+> ```java
+> public class Variable {
+>       public static void main(String[] args) {
+>           int myFirstIntValue = 1;
+>           int mySecondIntValue = 2;
+>           /*
+>           System.out.println(myFirstIntValue);
+>           System.out.println(mySecondIntValue);
+>           System.out.println(myFirstIntValue + mySecondIntValue);
+>           */
+>       }
+> }
+> ```
+> But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
 ___ 
 ## Summary
 1. `String` use **double quotes (")** to define
