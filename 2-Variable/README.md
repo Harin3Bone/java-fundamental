@@ -50,8 +50,44 @@ public class Expression {
 }
 ```
 
-### String Literal
+### Literal String
 Any sequence of characters surrounded by double quotes is a **String Literal** in Java. It's value cannot be changed, unlike variable.
+
+_Example_
+```java
+public class ByteShortIntLong {
+
+    public static void main(String[] args) {
+        int myMinIntValue = Integer.MIN_VALUE;
+        int myMaxIntValue = Integer.MAX_VALUE;
+        System.out.println("Integer Minimum Value: " + myMinIntValue);
+        System.out.println("Integer Maximum Value: " + myMaxIntValue);
+    }
+}    
+```
+
+### Literal Char
+The `char` concept is just like `String` you can store any character, letter or number and other character like and exclamation mark ,question mark, hash, at sign ,etc. 
+
+`char` can only store a **single character**
+
+_Example_
+```java
+package primitive;
+
+public class CharBoolean {
+
+    public static void main(String[] args) {
+        char myChar = 'H';
+    }
+}
+```
+
+> **Note**
+> 
+> The `char` have been useful to store the last key and other scenarios where you're just wanting to keep the last key pressed or just the last single digit that's been used in a menu option or something along those lines.
+> 
+> Now `char` were much more relevant when Java was released in the late 1990s for saving much of memory. But these days we don't need it anymore.
 
 ### Java Operators
 **Java Operators** also just call **Operators** perform an operation (hence the word) on a variable or value.
@@ -95,7 +131,6 @@ _List of Primitive Types_
 8. double
 
 [Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
-
 
 ### Wrapper Classes
 Java uses the concept of a Wrapper class for all 8 `Primitive types`
@@ -142,11 +177,24 @@ public class ByteShortIntLong {
 > 
 > The **Number Types** in Java are use `int` by default. Then we recommended to always use `int` unless you've got a reason for not to do that
 
+### Boolean
+A `boolean` value of logical allows for two choices 
+
+- **True** or **False** 
+- **Yes** or **No** 
+- **1** or **0**
+
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
+
 ___ 
 ## Summary
-1. Number Types in Java use `int` by default.
-2. Recommended to always use `int` unless you've got a reason for not to do that.
-3. Number Types with floating point in Java use `double` by default.
-4. Recommended to use `double` for most calculations When you have to use precision of a floating point.
-5. Not recommended to use casting in `float` and `double`
-6. For an advance calculation recommended to use class `BigDecimal` 
+1. `String` use **double quotes (")** to define
+2. `char` use **single quote (')** to define
+3. `char` can only store 1 character.
+4. Number Types in Java use `int` by default.
+5. Recommended to always use `int` unless you've got a reason for not to do that.
+6. Number Types with floating point in Java use `double` by default.
+7. Recommended to use `double` for most calculations When you have to use precision of a floating point.
+8. Not recommended to use casting in `float` and `double`
+9. For an advance calculation recommended to use class `BigDecimal` 
+10. In terms of Java `boolean` is primitive type and it can be set to 2 value only **True** or **False**

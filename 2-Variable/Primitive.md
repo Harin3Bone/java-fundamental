@@ -33,8 +33,8 @@
    2. Floating point types
       - float
       - double       
-2. Booleans (boolean)
-3. Characters (char)
+2. Characters (char)
+3. Booleans (boolean)
 
 > **Note 1**
 > 
@@ -76,7 +76,7 @@ Java has a class called `BigDecimal` that overcomes this.
 But for general calculations `float` and `double` are fine.
 
 ___
-## Usage
+## Number Types
 ### short
 The `short` data type can store whole numbers from **-32768** to **32767**
 
@@ -170,3 +170,47 @@ public class FloatDouble {
 > ```
 > 
 > but not recommended
+
+___
+## Characters
+
+### char
+A `char` occupies 2 byte of memory, or 16 bits and thus has a width of 16. The reason it's not just a **single byte** is that it allow you to store **Unicode** character
+
+_Example_
+```java
+package primitive;
+
+public class CharBoolean {
+
+    public static void main(String[] args) {
+        char myChar = 'H';
+    }
+}
+```
+
+### Unicode
+**Unicode** is an international encoding standard for use with different languages and scripts, by which each letter, digit or symbol is assigned a unique numeric value that applies across different platforms and programs.
+_Example_
+```java
+package primitive;
+
+public class CharBoolean {
+
+    public static void main(String[] args) {
+        char myUniCodeChar = '\u0048';
+    }
+}
+```
+
+___
+## Boolean
+
+### boolean
+A `boolean` value allows for two choices 
+
+- **True** or **False** 
+- **Yes** or **No** 
+- **1** or **0**
+
+In Java terms we have a `boolean` primitive type and it can be set to 2 value only. **True** or **False** They're actually pretty useful.
