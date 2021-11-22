@@ -32,6 +32,23 @@ public class ByteShortIntLong {
         System.out.println("Long Maximum Value: " + myMaxLongValue);
 
         long bigLongLiteralValue = 2_147_483_648L;
-        System.out.println(bigLongLiteralValue);
+
+        int myTotal = (myMinIntValue / 2);
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
+        // Challenge 1:
+        // create a byte variable and set it any valid byte number
+        // create a short variable and set it any valid short number
+        // create a int variable and set it any valid int number
+        // create a long variable and make it equal to 50000 plus 10 times the sum of
+        // the byte, short and int values.
+
+        byte chByte = 10;
+        short chShort = 100;
+        int chInt = 1000;
+        long chLongTotal = (long) (50000L + 10L * (chByte + chShort + chInt));
+        System.out.println("Challenge-1: " + chLongTotal);
+
     }
 }

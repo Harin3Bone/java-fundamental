@@ -38,12 +38,16 @@
 
 > **Note 1**
 > 
+> The **Number Types** in Java are use `int` by default.
+
+> **Note 2**
+> 
 > Floating point types can store **fractional numbers** by
 > `float` store 3.4e-038 to 3.4e+0.38
 > 
 > `double` store 1.7e-308 to 1.7e+308
 
-> **Note 2**
+> **Note 3**
 > 
 > Floating point types can also be `scientific number` with an `e` to indicate the power of 10
 > 

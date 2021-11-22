@@ -102,10 +102,15 @@ Java uses the concept of a Wrapper class for all 8 `Primitive types`
 In case of an `int` we can use `Integer` and by doing that gives us ways to perform operations on an `int`
 
 ```java
+public class ByteShortIntLong {
+
+    public static void main(String[] args) {
         int myMinIntValue = Integer.MIN_VALUE;
         int myMaxIntValue = Integer.MAX_VALUE;
         System.out.println("Integer Minimum Value: " + myMinIntValue);
         System.out.println("Integer Maximum Value: " + myMaxIntValue);
+    }
+}        
 ```
 In this case, we are using **MIN_VALUE** and **MAX_VALUE** to get Java to tell us the minimum and maximum ranges of numbers that can be stored.
 
@@ -119,3 +124,19 @@ The computer just skips back to the minimum number or the maximum number, which 
 > You will get **Overflow** in the case larger of the maximum value
 > 
 > You will get **Underflow** in the case smaller of the minimum value
+
+### Casting
+Casting means to treat or convert a number from one type to another. We put the type we want the number to be in parenthesis like this.
+
+_Example_
+```java
+public class ByteShortIntLong {
+
+    public static void main(String[] args) {
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+    }
+}
+```
+> **Note**
+> 
+> The **Number Types** in Java are use `int` by default. Then we recommended to always use `int` unless you've got a reason for not to do that
