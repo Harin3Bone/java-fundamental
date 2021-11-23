@@ -228,6 +228,12 @@ public class Variable {
 }
 ```
 But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
+
+### Conditional
+**Conditional logic** uses specific statements in Java to allow us to check a condition and execute certain code based on whether that condition (the expression) is **true** or **false**
+
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Conditional.md)
+
 ___ 
 ## Summary
 1. `String` use **double quotes (")** to define
@@ -243,3 +249,4 @@ ___
 11. Common primitive type will be `int`, `double` and `boolean`, Sometime maybe use `long` and `char`. 
 12. About `short`, `float` and `byte` are hardly to use anymore.
 13. `String` in Java are **immutable**
+14. Recommended to use `if` statement with **code block**

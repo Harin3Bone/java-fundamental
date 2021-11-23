@@ -20,9 +20,10 @@ _List of operators_
 |4|*|Multiply|Arithmetic Operator|
 |5|/|Divide|Arithmetic Operator|
 |6|%|Modular|Arithmetic Operator|
-|7|&&|AND|Logical Operator|
-|8|\|\||OR|Logical Operator|
-|9|!|NOT|Logical Operator|
+|7|==|Is Equal|Logical Operator|
+|8|&&|AND|Logical Operator|
+|9|\|\||OR|Logical Operator|
+|10|!|NOT|Logical Operator|
 
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
