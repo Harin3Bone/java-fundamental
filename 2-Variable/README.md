@@ -227,7 +227,7 @@ public class Variable {
       }
 }
 ```
-But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
+Fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
 
 ### Conditional
 **Conditional logic** uses specific statements in Java to allow us to check a condition and execute certain code based on whether that condition (the expression) is **true** or **false**

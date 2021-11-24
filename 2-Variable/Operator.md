@@ -14,7 +14,7 @@ _Example_
 _List of operators_
 | List | Operator | Explain |Describe|
 |:----:|:--------:|--------:|-------:|
-|1|=|Equal / Assigned|N/A|
+|1|=|Assigned|Arithmetic Operator|
 |2|+|Plus/Additional|Arithmetic Operator|
 |3|-|Minus/Subtract|Arithmetic Operator|
 |4|*|Multiply|Arithmetic Operator|
@@ -24,6 +24,17 @@ _List of operators_
 |8|&&|AND|Logical Operator|
 |9|\|\||OR|Logical Operator|
 |10|!|NOT|Logical Operator|
+|11|>|More than|Logical Operator|
+|12|<|Less than|Logical Operator|
+|13|>=|More or Equal|Logical Operator|
+|14|<=|Less or Equal|Logical Operator|
+
+> **Note**
+> 
+> As list from above we can extract all of operator into 2 type
+> 
+> 1. Arithmetic
+> 2. Logical
 
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
@@ -67,6 +78,49 @@ _Example_
 |Multiply value|result *= `value`|result = result * `value`|
 |Divide value|result /= `value`|result = result / `value`|
 |Modular value|result %= `value`|result = result % `value`|
+
+### Logical AND & Logical OR
+The **AND** operator comes in two flavors in Java, as does the **OR** operator.
+
+`&&` is the Logical **AND** which operates on `boolean` operands
+`||` is the Logical **OR** which operates on `boolean` operands too.
+
+These 2 are checking if a given condition is **true** or **false**
+
+> **Note**
+> 
+> You will almost always want to be doing this. The `&` and `|` are bitwise operator working at the bit level. This is an advanced concept that we won't get into here
+
+### NOT Operator
+The `!` or **NOT** Operator is also known as the Logical complement operator
+
+For use with `boolean` it tests the alternative value 
+
+_Example_
+```java
+    if (isCar) {}
+```
+From example it tests for **true**
+
+_Example_
+```java
+    if (!isCar) {}
+```
+By the way when adding `!` operator it will check the opposite Is it **false** in this case
+
+### Truth Table
+| Expression | Result |
+|:-----------|:------:|
+| T **AND** T | T |
+| F **OR** F | F |
+| !T | F |
+| !F | T |
+
+> **Note**
+> 
+> T = True
+> 
+> F = False
 
 ___
 ## Usage
@@ -247,3 +301,48 @@ _Example 1_ Plus by value
 From example on above **result += 2** that's mean **result = result +2**
 
 Actually you can use all of **arithmetic operator** in short hand like this.
+
+### AND 
+`AND` is an logical operator, You can use by `&&` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int secondTopScore = 81;
+
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than second top score and less than 100");
+        }
+    }
+```
+
+### OR 
+`OR` is an logical operator, You can use by `||` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int thirdTopScore = 81;
+
+        if ((topScore > thirdTopScore) || (topScore < 100)) {
+            System.out.println("Greater than third top score or less than 100");
+        }
+    }
+```
+
+### Equal 
+`Equal` is an logical operator, You can use by `==` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int thirdTopScore = 81;
+
+        if ((topScore > thirdTopScore) || (topScore < 100)) {
+            System.out.println("Greater than third top score or less than 100");
+        }
+    }
+```
