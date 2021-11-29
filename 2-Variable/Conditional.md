@@ -7,6 +7,10 @@ The **if-then** statement is the most basic of all the control flow statements. 
 
 This is known as **conditional logic**
 
+### Ternary Operator
+**Ternary Operator** is a shortcut to assigning one of two values to a variable depending on a given condition.
+
+___
 ## Usage
 
 ### if-then
@@ -59,3 +63,27 @@ _Example 4_ Check is **false**
         }
     }
 ```
+
+### Ternary Operator
+It's a shortcut of `if-then-else` statement
+
+_Example 1_
+```java
+    public static void main(String[] args) { 
+        boolean wasCar = isCar ? true : false;
+    }
+```
+
+_Example 2_
+```java
+    public static void main(String[] args) {
+        int ageOfClient = 20;
+        boolean isEighteenOrOver = ageOfClient == 20 ? true : false;
+    }
+```
+
+As an example from above we can explain
+
+1. Operand One - **ageOFClient == 20** is the condition we are checking. It needs to return **true** or **false**
+2. Operand Two - **true** here is the value to assign to the variable **isEighteenOrOver** if the condition is **true**
+3. Operand Three - **false** here is the value to assign to the variable **isEighteenOrOver** if the condition is **false**

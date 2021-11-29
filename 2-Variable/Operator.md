@@ -12,29 +12,64 @@ _Example_
 ```
 
 _List of operators_
-| List | Operator | Explain |Describe|
-|:----:|:--------:|--------:|-------:|
-|1|=|Assigned|Arithmetic Operator|
-|2|+|Plus/Additional|Arithmetic Operator|
-|3|-|Minus/Subtract|Arithmetic Operator|
-|4|*|Multiply|Arithmetic Operator|
-|5|/|Divide|Arithmetic Operator|
-|6|%|Modular|Arithmetic Operator|
-|7|==|Is Equal|Logical Operator|
-|8|&&|AND|Logical Operator|
-|9|\|\||OR|Logical Operator|
-|10|!|NOT|Logical Operator|
-|11|>|More than|Logical Operator|
-|12|<|Less than|Logical Operator|
-|13|>=|More or Equal|Logical Operator|
-|14|<=|Less or Equal|Logical Operator|
 
-> **Note**
-> 
-> As list from above we can extract all of operator into 2 type
-> 
-> 1. Arithmetic
-> 2. Logical
+**1.Arithmetic Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|=|Assigned|
+|2|+|Plus/Additional|
+|3|-|Minus/Subtract|
+|4|*|Multiply|
+|5|/|Divide|
+|6|%|Modular|
+
+**2.Unary Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|+|Unary plus (Indicates positive value)|
+|2|-|Unary minus (Negates an expression)|
+|3|++|Increment value by 1|
+|4|--|Decrement value by 1|
+|5|!|Invert value of boolean|
+
+**3.Equality & Relational Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|==|Is Equal|
+|2|!=|Not Equal to|
+|3|>|Greater than|
+|4|<|Less than|
+|5|>=|Greater than or Equal|
+|6|<=|Less than or Equal|
+
+**4.Conditional Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|&&|AND|
+|2|\|\||OR|
+|3|!|NOT|
+
+**5.Type Comparison Operator**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|`instance of`|Compare an object to specified type|
+
+**6.Bitwise & Bit Shift Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|-|Unary bitwise complement|
+|2|<<|Signed left shift|
+|3|>>|Signed right shift|
+|4|>>>|Unsigned right shift|
+|5|&|Bitwise AND|
+|6|\||Bitwise exclusive OR|
+|7|^|Bitwise inclusive OR|
 
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
@@ -118,9 +153,34 @@ By the way when adding `!` operator it will check the opposite Is it **false** i
 
 > **Note**
 > 
-> T = True
+> T = `True`
 > 
-> F = False
+> F = `False`
+> 
+> && = `AND`
+> 
+> || = `OR`
+> 
+> ! = `NOT`
+
+### Precedence Operators
+| Ranking | Operators | Precedence | Associativity |
+|:-------:|:----------|:-----------|--------------:|
+|1|Parentheses <br> Array subscript <br> Member Selection|`()` , `[]` , `'`|Left > Right|
+|2|Postfix|`expr++` , `expr--`|Right > Left|
+|3|Unary|`++expr` , `--expr` , <br> `+expr` , `-expr` , <br> `~` , `!`|Right > Left|
+|4|Multiplicative|`*` , `/` , `%`|Left > Right|
+|5|Additive|`+` , `-`|Left > Right|
+|6|Shift|`<<` , `>>` , `>>>`|Left > Right|
+|7|Relational|`<` , `>` , <br> `<=` , `>=` , <br> `instance of`|Left > Right|
+|8|Equality|`==` , `!=`|Left > Right|
+|9|Bitwise AND|`&`|Left > Right|
+|10|Bitwise exclusive OR|`^`|Left > Right|
+|11|Bitwise inclusive OR|`\|`|Left > Right|
+|12|Logical AND|`&&`|Left > Right|
+|13|Logical OR|`\|\|`|Left > Right|
+|14|Ternary|`? :`|Right > Left|
+|15|Assignment|`=` , `+=` , `-=` , `*=` , <br> `/=` , `%=` , `&=` , `^=`, <br> `!=` , `<<=` , `>>=` , `>>>=`|Right > Left|
 
 ___
 ## Usage

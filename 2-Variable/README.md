@@ -234,6 +234,26 @@ Fortunately of **IDE** and **Text Editor** just now we can use their shortcut to
 
 [Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Conditional.md)
 
+### Truth Table
+| Expression | Result |
+|:-----------|:------:|
+| T && T | T |
+| F \|\| F | F |
+| !T | F |
+| !F | T |
+
+> **Note**
+> 
+> T = `True`
+> 
+> F = `False`
+> 
+> && = `AND`
+> 
+> || = `OR`
+> 
+> ! = `NOT`
+
 ___ 
 ## Summary
 1. `String` use **double quotes (")** to define
@@ -250,3 +270,9 @@ ___
 12. About `short`, `float` and `byte` are hardly to use anymore.
 13. `String` in Java are **immutable**
 14. Recommended to use `if` statement with **code block**
+
+___
+## Reference
+[Summary of Operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html)
+
+[Precedence Operators](http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html)
