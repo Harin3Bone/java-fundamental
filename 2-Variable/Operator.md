@@ -12,17 +12,64 @@ _Example_
 ```
 
 _List of operators_
-| List | Operator | Explain |Describe|
-|:----:|:--------:|--------:|-------:|
-|1|=|Equal / Assigned|N/A|
-|2|+|Plus/Additional|Arithmetic Operator|
-|3|-|Minus/Subtract|Arithmetic Operator|
-|4|*|Multiply|Arithmetic Operator|
-|5|/|Divide|Arithmetic Operator|
-|6|%|Modular|Arithmetic Operator|
-|7|&&|AND|Logical Operator|
-|8|\|\||OR|Logical Operator|
-|9|!|NOT|Logical Operator|
+
+**1.Arithmetic Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|=|Assigned|
+|2|+|Plus/Additional|
+|3|-|Minus/Subtract|
+|4|*|Multiply|
+|5|/|Divide|
+|6|%|Modular|
+
+**2.Unary Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|+|Unary plus (Indicates positive value)|
+|2|-|Unary minus (Negates an expression)|
+|3|++|Increment value by 1|
+|4|--|Decrement value by 1|
+|5|!|Invert value of boolean|
+
+**3.Equality & Relational Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|==|Is Equal|
+|2|!=|Not Equal to|
+|3|>|Greater than|
+|4|<|Less than|
+|5|>=|Greater than or Equal|
+|6|<=|Less than or Equal|
+
+**4.Conditional Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|&&|AND|
+|2|\|\||OR|
+|3|!|NOT|
+
+**5.Type Comparison Operator**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|`instance of`|Compare an object to specified type|
+
+**6.Bitwise & Bit Shift Operators**
+
+| List | Operator | Explain |
+|:----:|:--------:|--------:|
+|1|-|Unary bitwise complement|
+|2|<<|Signed left shift|
+|3|>>|Signed right shift|
+|4|>>>|Unsigned right shift|
+|5|&|Bitwise AND|
+|6|\||Bitwise exclusive OR|
+|7|^|Bitwise inclusive OR|
 
 ### Operand
 **Operands** is a term used to describe any object that is manipulated by an **operator**. If we consider this statement
@@ -66,6 +113,74 @@ _Example_
 |Multiply value|result *= `value`|result = result * `value`|
 |Divide value|result /= `value`|result = result / `value`|
 |Modular value|result %= `value`|result = result % `value`|
+
+### Logical AND & Logical OR
+The **AND** operator comes in two flavors in Java, as does the **OR** operator.
+
+`&&` is the Logical **AND** which operates on `boolean` operands
+`||` is the Logical **OR** which operates on `boolean` operands too.
+
+These 2 are checking if a given condition is **true** or **false**
+
+> **Note**
+> 
+> You will almost always want to be doing this. The `&` and `|` are bitwise operator working at the bit level. This is an advanced concept that we won't get into here
+
+### NOT Operator
+The `!` or **NOT** Operator is also known as the Logical complement operator
+
+For use with `boolean` it tests the alternative value 
+
+_Example_
+```java
+    if (isCar) {}
+```
+From example it tests for **true**
+
+_Example_
+```java
+    if (!isCar) {}
+```
+By the way when adding `!` operator it will check the opposite Is it **false** in this case
+
+### Truth Table
+| Expression | Result |
+|:-----------|:------:|
+| T **AND** T | T |
+| F **OR** F | F |
+| !T | F |
+| !F | T |
+
+> **Note**
+> 
+> T = `True`
+> 
+> F = `False`
+> 
+> && = `AND`
+> 
+> || = `OR`
+> 
+> ! = `NOT`
+
+### Precedence Operators
+| Ranking | Operators | Precedence | Associativity |
+|:-------:|:----------|:-----------|--------------:|
+|1|Parentheses <br> Array subscript <br> Member Selection|`()` , `[]` , `'`|Left > Right|
+|2|Postfix|`expr++` , `expr--`|Right > Left|
+|3|Unary|`++expr` , `--expr` , <br> `+expr` , `-expr` , <br> `~` , `!`|Right > Left|
+|4|Multiplicative|`*` , `/` , `%`|Left > Right|
+|5|Additive|`+` , `-`|Left > Right|
+|6|Shift|`<<` , `>>` , `>>>`|Left > Right|
+|7|Relational|`<` , `>` , <br> `<=` , `>=` , <br> `instance of`|Left > Right|
+|8|Equality|`==` , `!=`|Left > Right|
+|9|Bitwise AND|`&`|Left > Right|
+|10|Bitwise exclusive OR|`^`|Left > Right|
+|11|Bitwise inclusive OR|`\|`|Left > Right|
+|12|Logical AND|`&&`|Left > Right|
+|13|Logical OR|`\|\|`|Left > Right|
+|14|Ternary|`? :`|Right > Left|
+|15|Assignment|`=` , `+=` , `-=` , `*=` , <br> `/=` , `%=` , `&=` , `^=`, <br> `!=` , `<<=` , `>>=` , `>>>=`|Right > Left|
 
 ___
 ## Usage
@@ -246,3 +361,48 @@ _Example 1_ Plus by value
 From example on above **result += 2** that's mean **result = result +2**
 
 Actually you can use all of **arithmetic operator** in short hand like this.
+
+### AND 
+`AND` is an logical operator, You can use by `&&` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int secondTopScore = 81;
+
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than second top score and less than 100");
+        }
+    }
+```
+
+### OR 
+`OR` is an logical operator, You can use by `||` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int thirdTopScore = 81;
+
+        if ((topScore > thirdTopScore) || (topScore < 100)) {
+            System.out.println("Greater than third top score or less than 100");
+        }
+    }
+```
+
+### Equal 
+`Equal` is an logical operator, You can use by `==` in statement
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int topScore = 100;
+        int thirdTopScore = 81;
+
+        if ((topScore > thirdTopScore) || (topScore < 100)) {
+            System.out.println("Greater than third top score or less than 100");
+        }
+    }
+```

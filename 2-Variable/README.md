@@ -49,7 +49,7 @@ public class ByteShortIntLong {
 }    
 ```
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/main/2-Variable/String.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/String.md)
 
 ### Literal Char
 The `char` concept is just like `String` you can store any character, letter or number and other character like and exclamation mark ,question mark, hash, at sign ,etc. 
@@ -115,7 +115,7 @@ _List of Primitive Types_
 7. float
 8. double
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/main/2-Variable/Primitive.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
 
 ### Wrapper Classes
 Java uses the concept of a Wrapper class for all 8 `Primitive types`
@@ -169,7 +169,7 @@ A `boolean` value of logical allows for two choices
 - **Yes** or **No** 
 - **1** or **0**
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/main/2-Variable/Primitive.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Primitive.md)
 
 ### Operator, Operand and Expression
 **Operators** in Java are special symbols that perform specific operations on one, two or three operands, and then return a result.
@@ -178,7 +178,7 @@ A `boolean` value of logical allows for two choices
 
 **Expression** is formed by combining variables, literals, method return values and operators.
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/main/2-Variable/Operator.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
 
 ### Abbreviate Operator
 **Abbreviate Operator** is a short hand of syntax
@@ -195,7 +195,7 @@ A `boolean` value of logical allows for two choices
 |Divide value|result /= `value`|result = result / `value`|
 |Modular value|result %= `value`|result = result % `value`|
 
-[Read more](https://github.com/Harin3Bone/java-fundamental/tree/main/2-Variable/Operator.md)
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Operator.md)
 
 ### Comment
 **Comment** are ignored by the computer and are added to a program to help describe something to make human known it.
@@ -227,7 +227,33 @@ public class Variable {
       }
 }
 ```
-But fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
+Fortunately of **IDE** and **Text Editor** just now we can use their shortcut to comment easier
+
+### Conditional
+**Conditional logic** uses specific statements in Java to allow us to check a condition and execute certain code based on whether that condition (the expression) is **true** or **false**
+
+[Read more](https://github.com/Harin3Bone/java-fundamental/tree/learn/2-Variable/Conditional.md)
+
+### Truth Table
+| Expression | Result |
+|:-----------|:------:|
+| T && T | T |
+| F \|\| F | F |
+| !T | F |
+| !F | T |
+
+> **Note**
+> 
+> T = `True`
+> 
+> F = `False`
+> 
+> && = `AND`
+> 
+> || = `OR`
+> 
+> ! = `NOT`
+
 ___ 
 ## Summary
 1. `String` use **double quotes (")** to define
@@ -243,3 +269,10 @@ ___
 11. Common primitive type will be `int`, `double` and `boolean`, Sometime maybe use `long` and `char`. 
 12. About `short`, `float` and `byte` are hardly to use anymore.
 13. `String` in Java are **immutable**
+14. Recommended to use `if` statement with **code block**
+
+___
+## Reference
+[Summary of Operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html)
+
+[Precedence Operators](http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html)
