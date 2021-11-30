@@ -63,5 +63,18 @@ public class Conditional {
          * Don't be surprised if you see output for this step, Where you might expect
          * it not to show
          */
+
+        double firstVal = 20.00d;
+        double secVal = 80.00d;
+        double totalVal = (firstVal + secVal) * 100.00d;
+        double ramainVal = totalVal % 40.00d;
+
+        boolean truthVal = true;
+        if (ramainVal != 0) {
+            truthVal = false;
+        }
+
+        String displayString = truthVal == true ? "" : "Got some remainder";
+        System.out.println(displayString);
     }
 }
