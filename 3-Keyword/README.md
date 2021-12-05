@@ -254,6 +254,26 @@ _Example_
 > 
 > In algorithms **negative one** indicates an **Invalid value** or **Value not found**
 
+Actually if you can do, Should make method `return` one statement like this
+
+_Example_
+```java
+    public static int calculateHighScorePosition(int score) {
+        int position = 4;
+        if (score >= 1000) {
+            position = 1;
+        } else if (score >= 500) {
+            position = 2;
+        } else if (score >= 100) {
+            position = 3;
+        }
+
+        return position;
+    }
+```
+
+Because it make code in method clearer than have more than one `return`
+
 ___ 
 ## Summary
 1. Not do more than one **statement** in 1 line of code.
