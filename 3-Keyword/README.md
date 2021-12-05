@@ -85,7 +85,7 @@ We recommended to write code like this
 2. 1 line -> 1 statement.
 3. Make sure you have indent in block of code.
 
-> **Note 1 DON'T DO THIS**
+> **Note 1 DO NOT WRITE MORE THAN ONE STATEMENT IN ONE LINE**
 > 
 > You can do more than one statement in one line like this
 > 
@@ -95,7 +95,7 @@ We recommended to write code like this
 > 
 > but **NOT RECOMMENDED IT** because it too difficult when we read it.
 
-> **Note 2 DON'T DO THIS**
+> **Note 2 DO NOT PRESS TOO MUCH SPACES**
 > 
 > Also you can press more blank space too 
 > ```java
@@ -106,7 +106,7 @@ We recommended to write code like this
 > ```
 > but **NOT RECOMMENDED IT** because it too difficult when we read it.
 
-> **Note 3 DON'T DO THIS**
+> **Note 3 DO NOT INDENT SAME POSITION OF BRACE**
 > 
 > You can customize your indent of code
 > ```java
@@ -192,10 +192,75 @@ But in `if` block code they know `num1` because is in they scope.
 > 
 > Outside **Code block** not understand variable inside another code block
 
+### Methods
+A concept of **Methods** is collect duplicate code into once function (method) for make your code cleaner
+
+_Example_
+```java
+    public static void main(String[] args) {
+        boolean gameOver = true;
+        int score = 5000;
+        int levelComplete = 5;
+        int bonus = 100;
+
+        calculateScore(gameOver, score, levelComplete, bonus);
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelComplete, int bonus) {
+        if (gameOver) {
+            int finalScore = score + (levelComplete * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+```
+
+> **Note**
+> 
+> You can call method and parse parameter without declaration too by send literal value to them
+> 
+> ```java
+>     public static void main(String[] args) {
+>        calculateScore(true, 10_000, 8, 200);
+>    }
+> ```
+> 
+
+As if from example is not return anything but if you have to just declaration data type what you want to return
+
+_Example_
+```java
+    public static void main(String[] args) {
+        int finalScore = calculateScoreRet(true, 20_000, 2, 200);
+        System.out.println("Return finalScore is = " + finalScore);
+    }
+
+    public static int calculateScoreRet(boolean gameOver, int score, int levelComplete, int bonus) {
+        if (gameOver) {
+            int finalScore = score + (levelComplete * bonus);
+            return finalScore;
+        }
+        
+        return -1;
+    }
+```
+
+> **Note**
+> 
+> When you not return value use **void** to tell method not return anything
+
+> **Note**
+> 
+> One final point, In programming terms when return **negative one** is conventionally used to indicate an error.
+> 
+> In algorithms **negative one** indicates an **Invalid value** or **Value not found**
+
 ___ 
 ## Summary
 1. Not do more than one **statement** in 1 line of code.
 2. Not make too much space in **statement** because it too difficult to read.
+3. Even have 1 statement in `if` but you should create `{}` to make it read easier.
+4. Method can return value as **data type** you specified, When you not want to use **void** to tell them not return
+5. When return `-1` in terms of programming is mean **Invalid value** or **Value not found**
 
 ___
 ## Reference
