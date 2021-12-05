@@ -51,6 +51,15 @@ Java statements are instruction that tell programming language what to do, like 
 
 Basic statements define variables, initiate methods or start the execution of blocks
 
+**Synopsis**
+```java
+        if (condition) {
+            // if statement (block)
+        } else {
+            // else statement (block)
+        }
+```
+
 _Example_
 ```java
         int myVariable = 50;
@@ -110,6 +119,78 @@ We recommended to write code like this
 Anyway as all of note and recommendation from above are **Best Practice** you should know.
 
 But today we have many tools like Intellij or Visual Studio Code. They have function to **reformat** your code for make it pretty and read easier.
+
+### If-Else
+The `if` statement identifies which statement or code block to run based on the value of an expression. In other words based on specific condition
+
+Inside the code block defined by curly braces **{** and **}** we can have one or multiple statement
+
+**If then Else** actually know as **if-else** statement it mean code will execute when condition in `if` is true will do statement in `if` code block, And when is false will do statement in `else` code block
+
+_Example 1_
+```java
+        int score = 5000;
+
+        if (score == 5000) {
+            System.out.println("Your score was 5000");
+        } else {
+            System.out.println("Got there");
+        }
+```
+
+> **Note**
+> 
+> We can use the `else` statement after the `if` only
+
+_Example 2_
+```java
+        int score = 100;
+
+        if (score == 5000) {
+            System.out.println("Your score was 5000");
+        } else if (score < 1000) {
+            System.out.println("Your score was less than 1000");
+        } else {
+            System.out.println("Got there");
+        }
+```
+
+> **Note**
+> 
+> We can also add `else if` to add condition of `else`
+
+Best practice for write `if` or `if-else` is using block code `{}` even you have only 1 statements because it makes the code clearer and easy to understand
+
+_Example_
+```java
+        if (score == 5000) {
+            System.out.println("Your score was 5000");
+        }
+```
+
+### Code Block
+A **Code block** is a lexical structure of source code which is grouped together. 
+
+_Example_
+```java
+    int num1 = 10;
+
+    if (num1 == 10) {
+        int numSum = num1 + 10;
+    }
+
+    System.out.println("numSum = " + numSum);
+```
+
+As example from above it will be error. Because out of if code block print `numSum` but their is in `if` block code, So outside of block doesn't know what variable is name `numSum` 
+
+But in `if` block code they know `num1` because is in they scope.
+
+> **Note**
+> 
+> Inside the **Code block** can understand all variable inside or outside code block 
+> 
+> Outside **Code block** not understand variable inside another code block
 
 ___ 
 ## Summary
