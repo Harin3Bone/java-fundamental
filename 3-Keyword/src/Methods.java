@@ -33,10 +33,10 @@ public class Methods {
          * call both methods and display the result of the following
          * a score of 1500, 900, 400 and 50
          */
-        displayHighScorePosition("Bot", calculateHighScorePosition(1500));
-        displayHighScorePosition("Bot", calculateHighScorePosition(900));
-        displayHighScorePosition("Bot", calculateHighScorePosition(400));
-        displayHighScorePosition("Bot", calculateHighScorePosition(90));
+        displayHighScorePosition("BotA", calculateHighScorePosition(1500));
+        displayHighScorePosition("BotB", calculateHighScorePosition(900));
+        displayHighScorePosition("BotC", calculateHighScorePosition(400));
+        displayHighScorePosition("BotD", calculateHighScorePosition(90));
     }
 
     public static void calculateScore(boolean gameOver, int score, int levelComplete, int bonus) {
@@ -60,17 +60,14 @@ public class Methods {
     }
 
     public static int calculateHighScorePosition(int score) {
-        int ret = -1;
         if (score >= 1000) {
-            ret = 1;
-        } else if (score >= 500 && score < 1000) {
-            ret = 2;
-        } else if (score >= 100 && score < 500) {
-            ret = 3;
+            return 1;
+        } else if (score >= 500) {
+            return 2;
+        } else if (score >= 100) {
+            return 3;
         } else {
-            ret = 4;
+            return 4;
         }
-
-        return ret;
     }
 }
