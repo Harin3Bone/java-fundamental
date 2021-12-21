@@ -23,22 +23,29 @@ public class SecondAndMinute {
          * 3. 1 hour = 60 minutes // 3600 seconds
          */
 
+        System.out.println(getDurationString(60, 0));
+        System.out.println(getDurationString(3600));
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        if (minutes <= 0 || (seconds <= 0 && seconds >= 59)) {
+        if (minutes < 0 || (seconds < 0 || seconds > 59)) {
             return "Invalid value";
         }
 
-        int newSecond = (minutes * 60) + seconds;
-        int hours = newSecond / 3600;
+        int hours = minutes / 60;
+        int newMinute = minutes % 60;
 
-        return hours + "h" + minutes + "m" + seconds + "s";
+        return hours + "h " + newMinute + "m " + seconds + "s";
     }
 
     public static String getDurationString(int seconds) {
-        int hours = seconds / 3600;
+        if (seconds < 0) {
+            return "Invalid value";
+        }
+
         int minutes = seconds / 60;
-        return hours + "h" + minutes + "m" + seconds + "s";
+        int newSeconds = seconds % 60;
+
+        return getDurationString(minutes, newSeconds);
     }
 }
