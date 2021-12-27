@@ -274,6 +274,31 @@ _Example_
 
 Because it make code in method clearer than have more than one `return`
 
+### Overloading
+**Method Overloading** is a feature that allow us to have more than one method with the same name, as we use **different parameters**
+
+```java
+    public static int calculateScore(String playerName, int score) {
+        return score * 1000;
+    }
+
+    public static int calculateScore(int score) {
+        return score * 1000;
+    }
+
+    public static int calculateScore() {
+        return 0;
+    }
+```
+
+It is the ability to create multiple methods of the same name with different implementation.
+
+In addition it improve your code readability, reusability, easier to remember by same name just only different parameters and make programing flexibility to call a similar methods.
+
+> **Note**
+> 
+> If you changed only return type that is not **Method Overloading**
+ 
 ___ 
 ## Summary
 1. Not do more than one **statement** in 1 line of code.
@@ -281,6 +306,7 @@ ___
 3. Even have 1 statement in `if` but you should create `{}` to make it read easier.
 4. Method can return value as **data type** you specified, When you not want to use **void** to tell them not return
 5. When return `-1` in terms of programming is mean **Invalid value** or **Value not found**
+6. **Method Overloading** is a ability to create multiple methods with same name as we use **different parameters**
 
 ___
 ## Reference
