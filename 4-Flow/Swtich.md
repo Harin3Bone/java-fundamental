@@ -2,7 +2,7 @@
 
 ## Theory
 
-### Explain
+### Explain 
 A **Switch** statement are allows a variable to be tested for equality against a list of values.
 
 Each value is called a **Case**, and the variable being switched on is checked for each case.

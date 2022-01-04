@@ -74,7 +74,7 @@ public class NumberDayInMonth {
     }
 
     public static int getDaysInMonth(int month, int year) {
-        if (year <= 0) {
+        if (year <= 0 || year > 9999) {
             return -1;
         }
 
