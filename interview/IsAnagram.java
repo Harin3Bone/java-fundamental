@@ -1,8 +1,7 @@
+package interview;
+
 import java.util.Arrays;
 
-/**
- * anagram
- */
 public class IsAnagram {
 
     public static void main(String[] args) {
