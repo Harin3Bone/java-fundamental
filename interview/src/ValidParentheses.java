@@ -62,7 +62,8 @@ public class ValidParentheses {
     }
 
     // Version 1
-    public static boolean isValidParentheses(String s) {
+    @SuppressWarnings("serial")
+	public static boolean isValidParentheses(String s) {
         Map<Character, Character> map = new HashMap<Character, Character>() {
             {
                 put(')', '(');
