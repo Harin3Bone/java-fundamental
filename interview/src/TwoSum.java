@@ -1,5 +1,3 @@
-package interview;
-
 import java.util.Arrays;
 
 public class TwoSum {
