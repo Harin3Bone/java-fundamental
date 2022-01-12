@@ -1,4 +1,11 @@
+# VSCode  
 .jump
 .vscode
 *.class
+
+# Eclipse 
+.project
+.classpath
+
+# Unnecessary Files
 Interview.md
